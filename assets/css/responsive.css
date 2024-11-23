@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* Reducir altura en pantallas pequeñas */
+    }
+
+    .banner-content h1 {
+        font-size: 2em; /* Tamaño más pequeño para el texto */
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+}
