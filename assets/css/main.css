@@ -55,12 +55,9 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.banner::after {
-    background: rgba(0, 0, 0, 0.6);
-}
-
 .banner-content {
-    position: relative;
+    margin: auto;
+    color:rgb(243, 243, 243);
     z-index: 2;
     max-width: 800px;
     padding: 20px;
@@ -80,8 +77,8 @@ h1, h2, h3 {
 
 .banner-content button {
     padding: 10px 20px;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #ffffff;
+    color: #010101;
     border: none;
     border-radius: 4px;
     font-size: 1em;
@@ -90,8 +87,22 @@ h1, h2, h3 {
 }
 
 .banner-content button:hover {
-    background-color: #e6554e;
-    transform: scale(1.05);
+    background-color: #d6d6d6; /* Color más vibrante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.banner-content h1, .banner-content p, .banner-content button {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .new-arrivals {
