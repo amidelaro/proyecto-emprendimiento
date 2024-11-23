@@ -269,6 +269,7 @@ h1, h2, h3 {
 .testimonials {
     background-color: #ffffff;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .testimonials h2 {
