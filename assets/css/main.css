@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -15,30 +19,44 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.logo-container {
+    text-align: center;
+    margin-top: 40px;
     background-color: #333;
     color: white;
-    max-height: 5vh;
-    height: 5vh;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: #333;
     text-decoration: none;
-    margin: 0 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -54,6 +72,7 @@ h1, h2, h3 {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .nav-links li a:hover {
@@ -248,8 +267,7 @@ h1, h2, h3 {
 }
 
 .testimonials {
-    background-color: #ffffff; /* Fondo diferenciado */
-    padding: 40px 20px;
+    background-color: #ffffff;
     text-align: center;
 }
 
