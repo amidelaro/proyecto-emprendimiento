@@ -87,9 +87,9 @@ h1, h2, h3 {
 }
 
 .banner-content button:hover {
-    background-color: #d6d6d6; /* Color más vibrante */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #d6d6d6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 .banner-content h1, .banner-content p, .banner-content button {
@@ -111,8 +111,17 @@ h1, h2, h3 {
 }
 
 .new-arrivals h2 {
-    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
     margin-bottom: 10px;
+    color: #333;
+}
+
+.categories {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .categories span {
@@ -124,49 +133,63 @@ h1, h2, h3 {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .product {
-    width: 100%;
-    height: 350px;
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 40vh;
+}
+
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .product img {
     width: 100%;
-    height: 70%;
+    height: 80%;
     object-fit: cover;
+    margin-bottom: 5px;
 }
+
 
 .product h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #333;
-    margin: 10px 0 5px;
-    height: 15%;
+    margin: 5px 0;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .product p {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
     color: #555;
-    height: 15%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.product h3, .product p {
+    line-height: 1.2;
 }
 
 .promotions {
