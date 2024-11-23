@@ -16,17 +16,19 @@
         <nav class="navbar">
             <div class="logo">Noor</div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Páginas</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#banner">Inicio</a></li>
+                <li><a href="#new-arrivals">Shop</a></li>
+                <li><a href="#about-us">Sobre Nosotros</a></li>
+                <li><a href="#testimonials">Reseñas</a></li>
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#login">Login</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <!-- Banner -->
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="blur-container">
             <div class="banner-content">
                 <h1>Explora la Moda que te Define</h1>
@@ -37,7 +39,7 @@
     </section>
 
     <!-- Productos recientes -->
-    <section class="new-arrivals">
+    <section class="new-arrivals" id="new-arrivals">
         <h2>Lo más nuevo</h2>
         <div class="categories">
             <span>Mujer</span> | <span>Hombre</span> | <span>Zapatos</span> | <span>Bolsos</span> | <span>Accesorios</span>
@@ -96,25 +98,46 @@
         </div>
     </section>
 
-    <!-- Promociones -->
-    <section class="promotions">
-        <div class="promo">
-            <h3>Donde los sueños se encuentran con la moda</h3>
-            <button>Compra Ahora</button>
+    <section class="about-us" id="about-us">
+        <h2>Sobre Noor</h2>
+        <div class="about-content">
+            <img src="assets/img/about-us.avif" alt="Sobre nosotros">
+            <p>
+                Noor es una tienda de moda dedicada a ofrecer estilo, comodidad y tendencias modernas para todos. Creemos que la moda no solo sigue tendencias, sino que permite a cada persona expresar su personalidad y autenticidad. Nuestra misión es empoderarte a través de prendas cuidadosamente seleccionadas, que combinan calidad, diseño y confort, para que siempre te sientas seguro y único en cada paso que des.
+            </p>            
         </div>
-        <div class="promo">
-            <h3>Estilos encantadores para cada mujer</h3>
-            <button>Compra Ahora</button>
-        </div>
-        <div class="promo">
-            <h3>Calzado urbano para la vida en la ciudad</h3>
-            <button>Compra Ahora</button>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+        <h2>Reseñas de Clientes</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Noor tiene productos increíbles. La calidad es insuperable y el servicio es excelente. ¡Recomendado!"</p>
+                <span>- Camila Rodríguez</span>
+            </div>
+            <div class="testimonial">
+                <p>"Gracias a Noor encontré prendas que realmente reflejan mi estilo. ¡Estoy encantado con mi compra!"</p>
+                <span>- Javier Martínez</span>
+            </div>
+            <div class="testimonial">
+                <p>"El servicio personalizado y la rapidez en el envío me sorprendieron. ¡Sin duda volveré a comprar aquí!"</p>
+                <span>- Sofía Ramírez</span>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Noor. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>© 2024 Noor. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
     </footer>
+    
 </body>
 </html>
